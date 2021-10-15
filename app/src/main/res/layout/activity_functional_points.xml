@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".FUNCTIONAL_POINTS.functional_points">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_exit3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:src="?attr/homeAsUpIndicator"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="arial"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Зовнішні вводи" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Простий" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Середній" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Складний" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/externalInput1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalInput2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalInput3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="arial"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Зовнішні виводи" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Простий" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Середній" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Складний" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/externalOutput1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalOutput2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalOutput3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="arial"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Зовнішні запити" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Простий" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Середній" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Складний" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/externalRequest1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalRequest2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalRequest3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="arial"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Локальні внутрішні логічні файли" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Простий" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Середній" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Складний" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/localLogicFile1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/localLogicFile2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/localLogicFile3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="arial"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Зовнішні інтерфейсні файли" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Простий" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Середній" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHint"
+                        android:text="Складний" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/externalInterfaceFile1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalInterfaceFile2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/externalInterfaceFile3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:background="@drawable/custom_input_elements"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:visibility="visible"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment1"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Канали передачі даних"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment2"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Розподілені обчислення"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment3"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Вимоги до продуктивності"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment4"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Конфігурація з обмеженням"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment5"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Частота транзакцій"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment6"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Інтерактивний запит і/або запис"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment7"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Ефективність для кінц. користувача"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment8"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Інтерактивне оновлення"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment9"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Складна обробка"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment10"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Повторне використання"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment11"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Спрощення перетв./установки"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment12"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Спрощення операції"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment13"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Використання не декількох вузлів"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/factorEnvironment14"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Потенціал зміни функції"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/factorEnvironment14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/programmingLanguages"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Мова програмування"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/programmingLanguages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/FPtype"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Вибір типу"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/FPtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/result_layoutFP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="arial"
+                    android:text="Результат"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/countFP"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="К-ть функціональних точ."
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/countFP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/result_N"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="N (Сума факторів середовища)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/result_N"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/CAF_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="СAF (Коригуючий множник)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/CAF_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/AFP_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="AFP (Скореговані ФТ)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/AFP_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/LOC_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="LOC (Перетворення рядка)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/LOC_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/Trudovytraty_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Трудовитрати"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Trudovytraty_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculateFP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/colorLime"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/custom_background_true"
+                android:text="Обчислити" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

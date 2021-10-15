@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".COCOMO.cocomo1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_exit1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/transparent"
+                    android:src="?attr/homeAsUpIndicator"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/level"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Вибір рівня"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/type"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Вибір типу"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kloc_relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/countLinesOfCode"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Кількість рядків коду (тис.)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/countLinesOfCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="... KLOC"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12"
+                        android:singleLine="true"
+                        android:textColor="@color/colorHint"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/intermediateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/RELY_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="rely_hint_function"
+                        android:text="Необхідна надійність ПЗ"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/RELY_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/DATA_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="data_hint_function"
+                        android:text="Розмір БД додатку"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/DATA_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/CPLX_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="cplx_hint_function"
+                        android:text="Складність продукту"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/CPLX_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/TIME_spinner"
+                        android:clickable="true"
+                        android:onClick="time_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Обмеження швидкодії"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/TIME_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/STOR_spinner"
+                        android:clickable="true"
+                        android:onClick="stor_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Обмеження пам'яті"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/STOR_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/VIRT_spinner"
+                        android:clickable="true"
+                        android:onClick="virt_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Нестійкість оточення ВМ"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/VIRT_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/TURN_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="turn_hint_function"
+                        android:text="Необхідний час віднов-ня"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/TURN_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/ACAP_spinner"
+                        android:clickable="true"
+                        android:onClick="acap_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Аналітичні здібності"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/ACAP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/AEXP_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="aexp_hint_function"
+                        android:text="Досвід розробки"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/AEXP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/PCAP_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="pcap_hint_function"
+                        android:text="Здібності до роз-ки ПЗ"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/PCAP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/VEXP_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="vexp_hint_function"
+                        android:text="Досвід використання ВМ"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/VEXP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/LEXP_spinner"
+                        android:clickable="true"
+                        android:onClick="lexp_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Досвід роз-ки на мовах прог."
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/LEXP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/MODP_spinner"
+                        android:clickable="true"
+                        android:onClick="modp_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Застосування методів розробки ПЗ"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/MODP_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/TOOL_spinner"
+                        android:clickable="true"
+                        android:onClick="tool_hint_function"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Викор-ня інструм. розробки ПО"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/TOOL_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/SCED_spinner"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:onClick="sced_hint_function"
+                        android:text="Вимоги дотримання графіка роз-ки"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/SCED_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="-15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/colorHint" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="arial"
+                    android:text="Результат"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/vertical_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/trudoemnist_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Трудоємність"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/trudoemnist_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/timeDev_result_layout"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/timeDev_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Час розробки"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/timeDev_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/avaragePersonal_result_layout"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/avaragePersonal_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Середня чис. персоналу"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/avaragePersonal_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/productivity_result_layout"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toStartOf="@+id/productivity_result"
+                        android:ellipsize="end"
+                        android:fontFamily="arial"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Продуктивність"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/productivity_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLime"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/colorLime"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/custom_background_true"
+                android:text="Обчислити" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

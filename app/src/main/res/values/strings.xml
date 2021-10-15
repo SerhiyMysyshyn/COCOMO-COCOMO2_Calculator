@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Multi Calculator</string>
+
+    <string name="hint_rely">(RELY) Необхідна надійність програмного забезпечення</string>
+    <string name="hint_data">(DATA) Розмір БД додатку</string>
+    <string name="hint_cplx">(CPLX) Складність продукту</string>
+    <string name="hint_time">(TIME) Обмеження швидкодії при виконанні програми</string>
+    <string name="hint_stor">(STOR) Обмеження пам’яті</string>
+    <string name="hint_virt">(VIRT) Нестійкість оточення віртуальної машини</string>
+    <string name="hint_turn">(TURN) Необхідний час відновлення</string>
+    <string name="hint_acap">(ACAP) Аналітичні здібності</string>
+    <string name="hint_aexp">(AEXP) Досвід розробки</string>
+    <string name="hint_pcap">(PCAP) Здібності до розробки програмного забезпечення</string>
+    <string name="hint_vexp">(VEXP) Досвід використання віртуальних машин</string>
+    <string name="hint_lexp">(LEXP) Досвід розробки на мовах програмування</string>
+    <string name="hint_modp">(MODP) Застосування методів розробки програмного забезпечення</string>
+    <string name="hint_tool">(TOOL) Використання інструментарію розробки ПО</string>
+    <string name="hint_sced">(SCED) Вимоги дотримання графіка розробки</string>
+
+    <!-- ############################################################################################### -->
+
+    <string name="hint2_prec">(PREC) Прецедентність, наявність досвіду аналогічних розробок</string>
+    <string name="hint2_flex">(FLEX) Гнучкість процесу розробки</string>
+    <string name="hint2_resl">(RESL) Архітектура і дозвіл ризиків</string>
+    <string name="hint2_team">(TEAM) Спрацьованість команди</string>
+    <string name="hint2_pmat">(PMAT) Зрілість процесів</string>
+
+    <string name="hint2_pers">(PERS) Кваліфікація персоналу</string>
+    <string name="hint2_prex">(PREX) Досвід персоналу</string>
+    <string name="hint2_rcpx">(RCPX) Складність і надійність продукту</string>
+    <string name="hint2_ruse">(RUSE) Розробка для повторного використання</string>
+    <string name="hint2_pdif">(PDIF) Складність платформи розробки</string>
+    <string name="hint2_fcil">(FCIL) Обладнання</string>
+    <string name="hint2_sced">(SCED) Час, необхідний для виконання графіка робіт</string>
+
+    <string name="hint2_acap">(ACAP) Можливості аналітика</string>
+    <string name="hint2_aexp">(AEXP) Досвід розробки додатків</string>
+    <string name="hint2_pcap">(PCAP) Можливості програміста</string>
+    <string name="hint2_pcon">(PCON) Тривалість роботи персоналу</string>
+    <string name="hint2_pexp">(PEXP) Досвід роботи з платформою</string>
+    <string name="hint2_ltex">(LTEX) Досвід використання мови програмування та інструментальних засобів</string>
+    <string name="hint2_rely">(RELY) Необхідна надійність програми</string>
+    <string name="hint2_data">(DATA) Розмір бази даних</string>
+    <string name="hint2_cplx">(CPLX) Складність програми</string>
+    <string name="hint2_resu">(RUSE) Необхідна можливість багаторазового використання</string>
+    <string name="hint2_docu">(DOCU) Відповідність документації потребам життєвого циклу</string>
+    <string name="hint2_time">(TIME) Обмеження часу виконання</string>
+    <string name="hint2_stor">(STOR) Обмеження пам`яті</string>
+    <string name="hint2_pvol">(PVOL) Змінність платформи</string>
+    <string name="hint2_tool">(TOOL) Використання інструментальних програмних засобів</string>
+    <string name="hint2_site">(SITE) Багатоабонентська (віддалена) розробка</string>
+    <string name="hint2_sced22">(SCED) Час, необхідний для виконання графіка робіт</string>
+
+
+</resources>
